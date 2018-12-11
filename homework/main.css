@@ -1,0 +1,40 @@
+.list>li>p{
+    line-height: 150%;
+}
+.list>li{
+    /* list-style-type:none */
+}
+body{
+    margin-left: 640px;
+    font-family: FangSong;
+}
+li{
+    line-height: 150%;
+}
+h1{
+    margin-top: 60px;
+}
+.h21>ul>li{
+}
+
+.quato{
+    background:url(./img/black.jpg) no-repeat;
+    height: 220px;
+    width: 750px;
+    opacity: 0.8;
+    filter:alpha(opacity=40);
+}
+.quato .card{
+    color: #ffffff
+
+}
+.structure{
+    background:url(./img/black.jpg) no-repeat;
+    height: 600px;
+    width: 750px;
+    opacity: 0.8;
+    filter:alpha(opacity=40);
+}
+.structure>p{
+    color: #ffffff
+}
