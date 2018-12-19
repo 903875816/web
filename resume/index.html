@@ -104,42 +104,103 @@
         </a>
       </footer>
     </div>
-
-    <a class="button" href="#">下载 PDF 简历</a>
-
-    <p>
-      Orange，新手一枚
+    <p class="download_warrp">
+      <a class="download_resume" href="./pdf/1.pdf" target="_blank" download>下载 PDF 简历</a>
+    </p>
+    <p class="selfintroduction">
+      OrangeC，新手一枚
       <br> 技能：学习，睡觉
     </p>
 
   </main>
-  <section>
+  <section class='skills'>
     <h2>技能</h2>
-    <ol>
-      <li>HTML 5 &amp; CSS 3</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>Vue</li>
-      <li>React</li>
-      <li>HTTP</li>
+    <ol class="clearfix">
+      <li>
+        <H3>
+          HTML 5 &amp; CSS 3
+        </H3>
+        <div class="progressbar">
+          <div class="progress"></div>
+        </div>
+      </li>
+      <li>
+          <H3>
+              JavaScript
+          </H3>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </li>
+      <li>
+        <H3>
+          Vue
+        </H3>
+        <div class="progressbar">
+          <div class="progress"></div>
+        </div>
+      </li>
+      <li>
+          <H3>
+              jQuery
+          </H3>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </li>
+      <li>
+        <H3>
+            HTTP
+        </H3>
+        <div class="progressbar">
+          <div class="progress"></div>
+        </div>
+      </li>
+      <li>
+        <H3>
+            React
+        </H3>
+        <div class="progressbar">
+          <div class="progress"></div>
+        </div>
+      </li>
     </ol>
   </section>
-  <section>
+  <section class="portfolio">
     <h2>作品集</h2>
     <nav>
-      <ol>
-        <li>所有</li>
-        <li>框架</li>
-        <li>原生JS&amp;CSS</li>
+      <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架</li>
+        <li id="portfolio3">原生JS&amp;CSS</li>
       </ol>
+      <div id="portfolioBar" class="bar state_1">
+        <div class="bar_inner"></div>
+      </div>
     </nav>
-
-    <div class="jobs">
-      <div class="big"></div>
-      <div class="small"></div>
-      <div class="small"></div>
+    <script>
+      portfolio1.onclick = function(){
+        portfolioBar.className = 'bar state_1'
+      }  
+      portfolio2.onclick = function(){
+        portfolioBar.className = 'bar state_2'
+      }  
+      portfolio3.onclick = function(){
+        portfolioBar.className = 'bar state_3'
+      }  
+    </script>
+    
+    <div class="jobs" style="height: 597px">
+      <div class="big" style="top: 0;left: 0;">
+        <img src="./img/1.jpg" alt="作品1">
+      </div>
+      <div class="small" style="top: 0;left: 645px;">
+        <img src="./img/2.jpg" alt="作品2">
+      </div>
+      <div class="small"style="top:298px;left:645px">
+        <img src="./img/3.jpg" alt="作品3">
+      </div>
     </div>
-
   </section>
 </body>
 
